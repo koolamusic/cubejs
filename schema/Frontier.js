@@ -1,61 +1,61 @@
-// cube(`Evidence_Frontiers`, {
-//   sql: `SELECT * FROM public.frontier`,
+cube(`Advocacy_Database`, {
+    sql: `SELECT * FROM public.cube22`,
 
-//   joins: {
+    joins: {
 
-//   },
+    },
 
-//   measures: {
-//     count: {
-//       type: `count`,
-//       drillMembers: [country, fullNames, jobTitle]
-//     }
-//   },
+    measures: {
+        count: {
+            type: `count`,
+            drillMembers: [country, fullNames, jobTitle]
+        }
+    },
 
-//   dimensions: {
-//     country: {
-//       sql: `country`,
-//       type: `string`
-//     },
+    dimensions: {
+        organisation: {
+            sql: `organisation`,
+            type: `string`
+        },
 
-//     organisation: {
-//       sql: `organisation`,
-//       type: `string`
-//     },
+        country: {
+            sql: `country`,
+            type: `string`
+        },
 
-//     typeOfOrganisation: {
-//       sql: `type_of_organisation`,
-//       type: `string`
-//     },
+        typeOfOrganisation: {
+            sql: `type_of_organisation`,
+            type: `string`
+        },
 
-//     fullNames: {
-//       sql: `full_names`,
-//       type: `string`
-//     },
+        fullNames: {
+            sql: `full_names`,
+            type: `string`
+        },
 
-//     jobTitle: {
-//       sql: `job_title`,
-//       type: `string`
-//     },
+        jobTitle: {
+            sql: `job_title`,
+            type: `string`
+        },
 
-//     age: {
-//       sql: `age`,
-//       type: `string`
-//     },
+        sex: {
+            sql: `sex`,
+            type: `string`
+        },
 
-//     uic: {
-//       sql: `uic`,
-//       type: `string`
-//     },
+        region: {
+            sql: `region`,
+            type: `string`
+        },
 
-//     sex: {
-//       sql: `sex`,
-//       type: `string`
-//     },
+        age: {
+            sql: `age`,
+            type: `string`
+        },
 
-//     region: {
-//       sql: `region`,
-//       type: `string`
-//     }
-//   }
-// });
+        uic: {
+            sql: `uic`,
+            type: `string`
+        }
+    }
+});
