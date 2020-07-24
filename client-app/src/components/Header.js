@@ -6,7 +6,8 @@ import { Layout, Menu } from "antd";
 const Header = ({ location }) => (
   <Layout.Header
     style={{
-      padding: "0 32px"
+      padding: "0 24px",
+      background: 'white'
     }}
   >
     <div
@@ -21,14 +22,14 @@ const Header = ({ location }) => (
           marginRight: "1em",
           display: "inline",
           width: 100,
-          lineHeight: "54px"
+          lineHeight: "30px"
         }}
       >
-        My Dashboard
+        Indicators
       </h2>
     </div>
     <Menu
-      theme="dark"
+      theme="light"
       mode="horizontal"
       selectedKeys={[location.pathname]}
       style={{
@@ -36,10 +37,10 @@ const Header = ({ location }) => (
       }}
     >
       <Menu.Item key="/explore">
-        <Link to="/explore">Explore</Link>
+        <Link to="/explore">Generate</Link>
       </Menu.Item>
       <Menu.Item key="/">
-        <Link to="/">Dashboard</Link>
+        <Link to="/">Saved Visualizations</Link>
       </Menu.Item>
     </Menu>
   </Layout.Header>
